@@ -1,0 +1,17 @@
+.active-tab {
+    background-color: #2563eb !important;
+    color: white !important;
+    border-color: #2563eb !important;
+}
+
+.tab-btn {
+    transition: all 0.3s ease;
+}
+
+.job-card {
+    transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+}

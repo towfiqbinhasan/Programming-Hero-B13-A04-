@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./jobs.css">
+</head>
+<body class="bg-blue-50 p-4 md:p-10">
+
+    <header class="max-w-6xl mx-auto mb-10">
+        <h1 class="text-3xl font-bold text-blue-900 mb-6">Job Application Tracker</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <p class="text-gray-500 font-medium">Total</p>
+                <h2 id="total-count" class="text-4xl font-bold text-blue-900">0</h2>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-emerald-500">
+                <p class="text-gray-500 font-medium">Interview</p>
+                <h2 id="interview-count" class="text-4xl font-bold text-emerald-600">0</h2>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-red-500">
+                <p class="text-gray-500 font-medium">Rejected</p>
+                <h2 id="rejected-count" class="text-4xl font-bold text-red-600">0</h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-blue-900">Available Jobs</h2>
+            <span id="tab-job-count" class="text-gray-600 font-semibold">0 jobs</span>
+        </div>
+
+        <div class="flex space-x-2 mb-8 border-b pb-4">
+            <button onclick="switchTab('all')" id="tab-all" class="tab-btn active-tab px-6 py-2 rounded-md font-medium">All</button>
+            <button onclick="switchTab('interview')" id="tab-interview" class="tab-btn bg-white px-6 py-2 rounded-md font-medium text-gray-500 border">Interview</button>
+            <button onclick="switchTab('rejected')" id="tab-rejected" class="tab-btn bg-white px-6 py-2 rounded-md font-medium text-gray-500 border">Rejected</button>
+        </div>
+
+        <div id="jobs-container" class="space-y-4">
+            </div>
+    </main>
+
+    <script src="./jobs.js"></script>
+</body>
+</html>
