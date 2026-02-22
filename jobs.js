@@ -77,7 +77,7 @@ function renderUI() {
     if (filteredJobs.length === 0) {
         container.innerHTML = `
             <div class="flex flex-col items-center justify-center py-24 bg-white rounded-lg">
-                <img src="./jobs.png" alt="No Jobs" class="w-24 h-24 mb-4 opacity-70">
+                <img src="jobs.png" alt="No Jobs" class="w-24 h-24 mb-4 opacity-70">
                 <h3 class="text-2xl font-bold text-blue-950">No jobs available</h3>
                 <p class="text-gray-400 mt-1">Check back soon for new job opportunities</p>
             </div>
